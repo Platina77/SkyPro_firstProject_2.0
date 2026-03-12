@@ -99,6 +99,7 @@ a, input, button, select {
   display: -ms-flexbox;
   display: flex;
   gap: 32px;
+<<<<<<< HEAD
 }
 
 .page-header {
@@ -124,4 +125,6 @@ a, input, button, select {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+=======
+>>>>>>> 7c4a2ed654760035029153d954d8ac5e44bda4c2
 }/*# sourceMappingURL=style.css.map */
