@@ -1,0 +1,12 @@
+@mixin background-custom{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom: 64px;
+}
+
+@mixin text-base{
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
