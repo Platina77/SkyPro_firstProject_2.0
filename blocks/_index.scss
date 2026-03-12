@@ -1,0 +1,47 @@
+.hero-page{
+    background-image: url("./img/hero-page_bg.jpg");
+    @include background-custom;
+    padding-top: 16px;
+    padding-bottom: 374px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #FFFFFFCC;
+    padding-bottom: 16px;
+
+    &__link{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.form-search{
+    &__input{
+    background-color: transparent;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    padding: 11px 32px;
+    color: #fff;
+
+        &::placeholder{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: #FFF;
+        }
+    }
+}
+
+.header__liks-box{
+    display: flex;
+    gap: 32px;
+}
