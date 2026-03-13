@@ -18,6 +18,14 @@ a, input, button, select {
   padding-right: calc(50% - 600px);
 }
 
+.section-title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #000;
+}
+
 .hero-page {
   background-image: url("./img/hero-page_bg.jpg");
   background-repeat: no-repeat;
@@ -40,6 +48,12 @@ a, input, button, select {
           align-items: center;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
   padding-bottom: 16px;
+}
+.header__liks-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
 }
 .header__link {
   text-decoration: none;
@@ -94,9 +108,28 @@ a, input, button, select {
   color: #FFF;
 }
 
-.header__liks-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 32px;
+.page-header {
+  color: #fff;
+  width: 751px;
+}
+.page-header__title {
+  padding-top: 63px;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+}
+.page-header__subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 16px 0;
+}
+.page-header__link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

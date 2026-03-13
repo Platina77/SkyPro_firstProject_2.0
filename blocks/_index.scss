@@ -12,13 +12,16 @@
     border-bottom: 0.5px solid #FFFFFFCC;
     padding-bottom: 16px;
 
+    &__liks-box{
+        display: flex;
+        gap: 32px;
+    }
+
     &__link{
         text-decoration: none;
         color: #fff;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include text-base;
     }
 }
 
@@ -33,15 +36,34 @@
 
         &::placeholder{
             font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+            @include text-base;
             color: #FFF;
         }
     }
 }
 
-.header__liks-box{
-    display: flex;
-    gap: 32px;
+.page-header{
+    color: #fff;
+    width: 751px;
+
+    &__title{
+        padding-top: 63px;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 70px;
+    }
+
+    &__subtitle{
+        font-size: 24px;
+        @include text-base;
+        padding: 16px 0;
+    }
+
+    &__link{
+        font-size: 16px;
+        @include text-base;
+        color: #fff;
+    }
+
 }

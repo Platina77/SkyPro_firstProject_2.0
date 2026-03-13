@@ -17,5 +17,13 @@ a, input, button, select{
     padding-right: calc(50% - 600px);
 }
 
+.section-title{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+}
+
 @import './blocks/mixins';
 @import './blocks/index';
