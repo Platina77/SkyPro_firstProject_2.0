@@ -42,9 +42,14 @@
     }
 }
 
+.header__liks-box{
+    display: flex;
+    gap: 32px;
+}
+
 .page-header{
     color: #fff;
-    width: 751px;
+    max-width: 755px;
 
     &__title{
         padding-top: 63px;
@@ -65,5 +70,23 @@
         @include text-base;
         color: #fff;
     }
+}
 
+.for{
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 32px;
+        row-gap: 30px;
+    }
+
+    &__item{
+        grid-column: span 2;
+        &_big{
+            grid-column: span 3;
+        }
+        &_rest{
+            background-image: url("./img/rest.jpg");
+        }
+    }
 }
