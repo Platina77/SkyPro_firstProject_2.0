@@ -9,3 +9,9 @@
     font-weight: 400;
     line-height: normal;
 }
+
+@mixin content-stack{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

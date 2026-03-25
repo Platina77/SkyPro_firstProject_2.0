@@ -29,8 +29,9 @@
     }
 }
 
-
 .for{
+    @include content-stack;
+
     &__content{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -40,11 +41,27 @@
 
     &__item{
         grid-column: span 2;
+        position: relative;
+
         &_big{
             grid-column: span 3;
         }
-        &_rest{
-            background-image: url("./img/rest.jpg");
-        }
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+        color: #fff;
     }
 }
