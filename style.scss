@@ -1,3 +1,6 @@
+@import './blocks/mixins';
+@import './blocks/index';
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +9,9 @@
 
 body{
     font-family: 'Montserrat', Arial, Helvetica, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
 }
 
 a, input, button, select{
@@ -17,6 +23,52 @@ a, input, button, select{
     padding-right: calc(50% - 600px);
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #FFFFFFCC;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.search{
+    &__input{
+    background-color: transparent;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    padding: 11px 32px;
+    color: #fff;
+
+        &::placeholder{
+            font-size: 16px;
+            @include text-base;
+            color: #FFF;
+        }
+    }
+}
+
+.nav{
+    
+    &__list{
+        display: flex;
+        gap: 32px;
+        list-style-type: none;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        @include text-base;
+    }
+}
+
 .section-title{
     font-size: 48px;
     font-style: normal;
@@ -25,5 +77,3 @@ a, input, button, select{
     color: #000;
 }
 
-@import './blocks/mixins';
-@import './blocks/index';

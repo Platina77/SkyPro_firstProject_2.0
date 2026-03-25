@@ -10,35 +10,43 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="hero-page container">
-        <section class="header">
-            <a href="#" class="logo">
-                <img class="logo__img logo__img_white" src="./img/logo-white.svg" alt="logo">
+    <section class="top container">
+        <header class="header top__header">
+            <a href="#" class="logo header__logo">
+                <img src="./img/logo-white.svg" alt="logo">
             </a>
-            <form action="#" class="form-search">
-                <input type="text" class="form-search__input" placeholder="Поиск">
+            <form action="#" class="search header__search">
+                <input type="text" class="search__input" placeholder="Поиск">
             </form>
-            <div class="header__liks-box">
-                <a href="./catalog.html" class="header__link">Каталог</a>
-                <a href="./cart.html" class="header__link">Корзина</a>
-            </div>
-        </section>
-        <div class="page-header">
-            <h1 class="page-header__title">Всё, чего заслуживает ваш дом</h1>
-            <p class="page-header__subtitle">Наша мебель — ваше отражение</p>
-            <a href="./catalog.html" class="page-header__link">Перейти в каталог</a>
-        </div>
-    </header>
-
-    <section class="for container">
-        <h2 class="section-title">Мебель для ... </h2>
-        <div class="for__content">
-            <div class="for__item for__item_rest for__item_big">отдыха</div>
-            <div class="for__item for__item_work for__item_big">работы</div>
-            <div class="for__item for__item_kitchen">кухни</div>
-            <div class="for__item for__item_children">детской</div>
-            <div class="for__item for__item_bathroom">ванной</div>
+            <nav class="nav header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./catalog.html" class="nav__link">Каталог</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./cart.html" class="nav__link">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="top__inner">
+            <h1 class="top__title">Всё, чего заслуживает ваш дом</h1>
+            <p class="top__subtitle">Наша мебель — ваше отражение</p>
+            <a href="./catalog.html" class="top__link">Перейти в каталог</a>
         </div>
     </section>
+
+    <main>
+        <section class="for container">
+            <h2 class="section-title">Мебель для ... </h2>
+            <div class="for__content">
+                <div class="for__item for__item_rest for__item_big">отдыха</div>
+                <div class="for__item for__item_work for__item_big">работы</div>
+                <div class="for__item for__item_kitchen">кухни</div>
+                <div class="for__item for__item_children">детской</div>
+                <div class="for__item for__item_bathroom">ванной</div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
