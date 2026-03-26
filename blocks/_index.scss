@@ -65,3 +65,96 @@
         color: #fff;
     }
 }
+
+.product-box{
+    @include content-stack;
+
+    &__link{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #000;
+    }
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 56px;
+}
+
+.card{
+    max-width: 378px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-top: 10px;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: #000
+    }
+
+    &__subtitle{
+        margin-top: 10px;
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #888;
+    }
+
+    &__price-box{
+        display: flex;
+        gap: 32px;
+        margin-top: auto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: #050505;
+    }
+
+    &__price{
+
+        &_disc{
+            color: #888;
+            text-decoration-line: line-through;
+        }
+    }
+
+    &__btn-box{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__btn{
+        border: none;
+        background-color: transparent;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:hover path{
+            fill: #000;
+        }
+    }
+   
+}
