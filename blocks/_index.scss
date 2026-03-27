@@ -4,7 +4,7 @@
     padding-bottom: 374px;
 
     &__inner{
-    color: #fff;
+    color: $text-inverse;
     max-width: 755px;
     }
 
@@ -25,7 +25,7 @@
     &__link{
         font-size: 16px;
         @include text-base;
-        color: #fff;
+        color: $text-inverse;
     }
 }
 
@@ -62,7 +62,7 @@
         font-weight: 600;
         line-height: normal;
         text-decoration: none;
-        color: #fff;
+        color: $text-inverse;
     }
 }
 
@@ -74,7 +74,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        color: #000;
+        color: $text-primary;
     }
 }
 
@@ -103,7 +103,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        color: #000
+        color: $text-primary;
     }
 
     &__subtitle{
@@ -113,7 +113,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        color: #888;
+        color: $text-secondary;
     }
 
     &__price-box{
@@ -130,7 +130,7 @@
     &__price{
 
         &_disc{
-            color: #888;
+            color: $text-secondary;
             text-decoration-line: line-through;
         }
     }
@@ -153,7 +153,7 @@
         }
 
         &:hover path{
-            fill: #000;
+            fill: $text-primary;
         }
     }
    
